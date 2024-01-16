@@ -12,65 +12,64 @@
     tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
+        android:layout_width="344dp"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
         app:cardCornerRadius="30dp"
-        app:cardElevation="20dp">
+        app:cardElevation="30dp">
 
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
             android:layout_gravity="center_horizontal"
-            android:padding="24dp"
-            android:background="@drawable/custom_edittext">
+            android:background="@color/fully_transparent"
+            android:orientation="vertical"
+            android:padding="24dp">
 
             <TextView
                 android:id="@+id/loginText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/login"
-                android:textSize="36sp"
                 android:textAlignment="center"
-                android:textStyle="bold"
-                android:textColor="@color/lavender"/>
+                android:textColor="@color/lavender"
+                android:textSize="36sp"
+                android:textStyle="bold" />
 
             <EditText
+                android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:id="@+id/username"
-                android:background="@drawable/custom_edittext"
                 android:layout_marginTop="40dp"
-                android:padding="8dp"
-                android:hint="Username"
+                android:background="@drawable/custom_edittext"
                 android:drawableLeft="@drawable/baseline_cookie_24"
-                android:textColor="@color/black"
-                android:drawablePadding="8dp"/>
+                android:drawablePadding="8dp"
+                android:hint="Email"
+                android:padding="8dp"
+                android:textColor="@color/black" />
 
             <EditText
+                android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:id="@+id/password"
-                android:background="@drawable/custom_edittext"
                 android:layout_marginTop="20dp"
-                android:padding="8dp"
-                android:hint="Password"
+                android:background="@drawable/custom_edittext"
                 android:drawableLeft="@drawable/baseline_cake_24"
-                android:textColor="@color/black"
-                android:drawablePadding="8dp"/>
+                android:drawablePadding="8dp"
+                android:hint="Password"
+                android:padding="8dp"
+                android:textColor="@color/black" />
 
             <Button
+                android:id="@+id/loginButton"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:text="@string/login"
-                android:id="@+id/loginButton"
                 android:layout_marginTop="30dp"
-                android:textSize="18sp"
+                android:background="@drawable/custom_edittext"
                 android:backgroundTint="@color/lavender"
-                android:background="@drawable/custom_edittext"/>
-
+                android:text="@string/login"
+                android:textSize="18sp" />
 
 
         </LinearLayout>

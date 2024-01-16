@@ -37,7 +37,7 @@ class MainActivity : ComponentActivity() {
 
         binding.loginButton.setOnClickListener(View.OnClickListener {
             val password =  binding.password.text.toString().trim()
-            val email = binding.username.text.toString().trim()
+            val email = binding.email.text.toString().trim()
             if (email == "") {
                 Toast.makeText(this, "Enter an email", Toast.LENGTH_LONG).show()
                 return@OnClickListener
