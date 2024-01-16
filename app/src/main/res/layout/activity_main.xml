@@ -21,21 +21,19 @@
 
         <LinearLayout
             android:layout_width="350dp"
-            android:layout_height="350dp"
+            android:layout_height="444dp"
             android:layout_gravity="center_horizontal"
-            android:background="@color/fully_transparent"
             android:orientation="vertical"
             android:padding="24dp">
 
-            <TextView
-                android:id="@+id/loginText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/login"
-                android:textAlignment="center"
-                android:textColor="@color/lavender"
-                android:textSize="36sp"
-                android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/logoImage"
+                android:layout_width="196dp"
+                android:layout_height="53dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/logoapp" />
 
             <EditText
                 android:id="@+id/email"
@@ -43,11 +41,12 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="40dp"
                 android:background="@drawable/custom_edittext"
-                android:drawableLeft="@drawable/baseline_cookie_24"
+                android:drawableLeft="@drawable/baseline_email_24"
                 android:drawablePadding="8dp"
-                android:hint="Email"
+                android:hint="Enter email address"
                 android:padding="8dp"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                android:textSize="15sp" />
 
             <EditText
                 android:id="@+id/password"
@@ -55,23 +54,35 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/custom_edittext"
-                android:drawableLeft="@drawable/baseline_cake_24"
+                android:drawableLeft="@drawable/baseline_lock_24"
                 android:drawablePadding="8dp"
-                android:hint="Password"
+                android:hint="Enter Password"
                 android:padding="8dp"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                android:textSize="15sp" />
 
             <Button
                 android:id="@+id/loginButton"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="40dp"
                 android:layout_marginTop="30dp"
                 android:background="@drawable/custom_edittext"
-                android:backgroundTint="@color/lavender"
-                android:text="@string/login"
-                android:textSize="18sp" />
+                android:backgroundTint="@color/cyan"
+                android:text="Sign in"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
 
+            <Button
+                android:id="@+id/signUpButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edittext"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:textSize="15sp" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
 </LinearLayout>
